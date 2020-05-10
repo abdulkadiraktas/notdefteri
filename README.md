@@ -1,4 +1,4 @@
-##TR
+## TR
 # Not defteri
 Basit ve temiz tasarımlı not defteri
 ![img](https://raw.githubusercontent.com/ThatZiv/notepad/master/media/Capture.PNG)
@@ -16,7 +16,7 @@ Basit ve temiz tasarımlı not defteri
 
 
 
-##EN
+## EN
 # notepad
 Jot your ideas down with this cute lil notepad
 ![img](https://raw.githubusercontent.com/ThatZiv/notepad/master/media/Capture.PNG)
