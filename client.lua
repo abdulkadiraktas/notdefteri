@@ -11,8 +11,8 @@ RegisterCommand("notepad", function(source, args)
         SetGui(not display)
     end
 end)
-TriggerEvent('chat:addSuggestion', '/notepad', 'Write anything down.', {
-    {name="toggle", help="Either 'open' or 'close', or just toggle with no args."}
+TriggerEvent('chat:addSuggestion', '/notepad', 'Birşey yazın.', {
+    {name="toggle", help="Not defterini açın"}
 })
 
 RegisterNUICallback('exit', function(data)
@@ -23,19 +23,19 @@ end)
 RegisterNUICallback('error', function(data)
     updateNotes(t)
     SetGui(false)
-    notify("~r~Error:~s~\n"..data.error)
+    notify("~r~Hata:~s~\n"..data.error)
 end)
 
 RegisterNUICallback('save', function(data)
     SetGui(false)
     table.insert(t, data.main)
-    notify("Saved Note ~h~#"..table.length(t))
+    notify("Not kayıt edildi ~h~#"..table.length(t))
     updateNotes(t)
 end)
 
 RegisterNUICallback('clear', function(data)
     SetGui(false)
-    notify("Cleared ~h~"..table.length(t).."~s~ notes")
+    notify("~h~"..table.length(t).."~s~ not silindi")
     t = {}
     updateNotes(t)
 end)
