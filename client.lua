@@ -1,7 +1,7 @@
 local display = false
 local t = {"This is a note."}
 
-RegisterCommand("notepad", function(source, args)
+RegisterCommand("notdefteri", function(source, args)
     PlaySound(source, "CANCEL", "HUD_MINI_GAME_SOUNDSET", 0, 0, 1)
     if args[1] == "open" then -- these args are pretty useless ngl
         SetGui(true)
@@ -11,7 +11,7 @@ RegisterCommand("notepad", function(source, args)
         SetGui(not display)
     end
 end)
-TriggerEvent('chat:addSuggestion', '/notepad', 'Birşey yazın.', {
+TriggerEvent('chat:addSuggestion', '/notdefteri', 'Birşey yazın.', {
     {name="toggle", help="Not defterini açın"}
 })
 
